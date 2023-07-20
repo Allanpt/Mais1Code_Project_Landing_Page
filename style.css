@@ -1,0 +1,39 @@
+body{
+    font-family: 'Open Sans', sans-serif;}
+#container-navbar{
+    margin: 35px 27px 0px ;
+}
+#container-navbar a{
+    font-size: 20px;
+}
+/*Media Queries*/
+
+
+@media (min-width: 400px){
+    #navbar-links {
+        flex-grow: 1;
+        justify-content: space-around;
+        
+    }
+}
+@media (max-width: 650px){
+    #navbar-links a{
+        font-size: 16px;
+    }
+}
+@media (min-width: 650px){
+    #navbar-links a{
+        font-size: 20px;
+    }
+}
+@media (min-width: 900px){
+    #navbar-links {
+        justify-content: center;
+        gap: 160px;
+    }
+    
+}
+@media (min-width: 1440px){
+    
+}
+
