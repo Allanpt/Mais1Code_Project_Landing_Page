@@ -56,23 +56,30 @@ body,html{
     padding-left: 106px;
 }
 #about-main-public #frases{
-    gap: 39px;
+    
 }
-span.verde{
-    position: absolute;
-    width: 184.444px;
+div.verde{
+    padding: 10px;
+    width: 184.44px;
     height: 220px;
     border-radius: 20px;
     border: 5px solid #92FD5F;
 }
-span.azul{
-    position: absolute;
-    width: 184.444px;
+div.azul{
+    padding: 10px;
+    width: 184.44px;
     height: 220px;
     border-radius: 20px;
     border: 5px solid #1466CF;
 }
-
+#about-main-public h2{
+    margin-top: 60px;
+    margin-bottom: 83px;
+    font-size: 2.5rem;
+}
+#about-main-public p{
+    font-size: 0.8rem;
+}
 
 /*Media Queries*/
 
@@ -107,6 +114,14 @@ span.azul{
     #navbar-links a{
         font-size: 20px;
     }
+}
+@media (min-width: 768px){
+    .col-md-2 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    
 }
 @media (min-width: 900px){
     #navbar-links {
