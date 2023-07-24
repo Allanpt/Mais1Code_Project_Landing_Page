@@ -52,18 +52,41 @@ body,html{
     position: relative;
     width: 100%;
     min-height: 1px;
-    padding-right: 106px;
-    padding-left: 106px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#about-main-public h2{
+    color: #1122BB;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+}
+#about-main-public h2 span{
+    color: #92FD5F;
+    
 }
 #about-main-public #frases{
-    
+    gap: 38.67px;
+    justify-content: center;
 }
 div.verde{
     padding: 10px;
     width: 184.44px;
     height: 220px;
     border-radius: 20px;
-    border: 5px solid #92FD5F;
+    box-shadow: 0 0 0 5px rgba(146, 253, 95, 1);
+    background: rgba(255, 255, 255, 0.50);
+}
+div.verde.empatia{
+    box-shadow: 0 0 0 5px rgba(146, 253, 95, 0.7);
+    background: rgba(255, 255, 255, 0.35);
+}
+div.verde.solucao{
+    box-shadow: 0 0 0 5px rgba(146, 253, 95, 0.5);
+    background: rgba(255, 255, 255, 0.25);
+}
+div.verde h3,
+div.verde p{
+    opacity: 1; 
 }
 div.azul{
     padding: 10px;
@@ -71,6 +94,7 @@ div.azul{
     height: 220px;
     border-radius: 20px;
     border: 5px solid #1466CF;
+    background: rgba(255, 255, 255, 0.50);
 }
 #about-main-public h2{
     margin-top: 60px;
@@ -116,10 +140,12 @@ div.azul{
     }
 }
 @media (min-width: 768px){
-    .col-md-2 {
-        -ms-flex: 0 0 20%;
-        flex: 0 0 20%;
-        max-width: 20%;
+    #about-main-public .col-md-12 {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 50px;
+        padding-left: 50px;
     }
     
 }
@@ -128,9 +154,45 @@ div.azul{
         justify-content: center;
         gap: 160px;
     }
-    
+    #about-main-public .col-md-12 {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+@media (min-width: 950px){
+    #about-main-public .col-md-12 {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 140px;
+        padding-left: 140px;
+    }
+}
+@media (min-width: 1095px){
+    #about-main-public .col-md-12 {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 220px;
+        padding-left: 220px;
+    }
+}
+@media (min-width: 1313px){
+    #about-main-public .col-md-12{
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 106px;
+        padding-left: 106px;
+    }
 }
 @media (min-width: 1440px){
-    
+    #about-main-public #frases{
+        gap: 38.67px;
+        justify-content: center;
+    }
 }
 
