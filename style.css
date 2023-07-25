@@ -30,14 +30,11 @@ body,html{
     width: 220px;
     height: 251px;
 }
-#home h1{
-    position: relative;
-    color: #2C2C2C;
-    font-size: 40px;
-    font-weight: 800;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 65px;
+#home.dp-flex {
+    display: -ms-flexbox;
+    display: flex;
 }
+
 #home p{
     position: relative;
     color: #2C2C2C;
@@ -114,6 +111,7 @@ div.azul{
     .navbar-collapse {
         align-items: flex-start;
     }
+    
 }
 @media (min-width: 500px){
     .navbar-expand-sm {
@@ -126,15 +124,64 @@ div.azul{
         flex-grow: 1;
         justify-content: space-around;
     }
+    #home .col-md-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
 }
 @media (max-width: 650px){
-    #navbar-links a{
-        font-size: 16px;
+    #container-navbar {
+        margin: 13px 0px 0px;
+    }
+    .home, .about-main-public {
+        margin: 0 15px;
+        height: 100%;
+    }
+    #home div.col-md-12.p-img {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 8px;
+    }
+    #home div.col-md-6 {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 8px;
     }
 }
 @media (min-width: 650px){
-    #navbar-links a{
-        font-size: 20px;
+    
+}
+@media (max-width: 768px){
+    container-navbar img{
+        
+    }
+    #home div.header1,
+    #home div.p-img{
+        display: flex;
+    }
+    #home div.header1{
+        padding: 0px 32px;
+    }
+    #home p{
+        font-size: 0.95rem;
+    }
+    #home div h1{
+        position: relative;
+        color: #2C2C2C;
+        margin-top: 30px;
+        text-align: center;
+        font-weight: 800;
+    }
+    #home div.p-img{
+        margin-top: 30px;
+    }
+    img.wake-up{
+        width: 40px;
     }
 }
 @media (min-width: 768px){
@@ -145,7 +192,22 @@ div.azul{
         padding-right: 50px;
         padding-left: 50px;
     }
-    
+    #home div.header1,
+    #home div.p-img,
+    .wake-up{
+        display: none;
+    }
+    #home p{
+        font-size: 1.3rem;
+    }
+    #home h1{
+        position: relative;
+        color: #2C2C2C;
+        font-size: 40px;
+        font-weight: 800;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-top: 65px;
+    }
 }
 @media (min-width: 900px){
     #navbar-links {
@@ -159,6 +221,12 @@ div.azul{
         padding-right: 100px;
         padding-left: 100px;
     }
+}
+@media (max-width: 950px){
+    #home h1{
+        font-size: 1.6rem;
+    }
+    
 }
 @media (min-width: 950px){
     #about-main-public .col-md-12 {
