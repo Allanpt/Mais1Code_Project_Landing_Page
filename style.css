@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body,html{
     background-color: #E5E5E5;
     box-sizing: border-box;
@@ -24,9 +29,7 @@ body,html{
     border: 1px solid #003391;
 }
 /*Home page*/
-#home{
-    border-bottom: 1px solid black;
-}
+
 #home span{
     position: absolute;
     right: 86%;
@@ -62,19 +65,38 @@ body,html{
     color: #1122BB;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: 700;
+    margin-bottom: 46px;
+    font-size: 1.25rem;
 }
 #about-main-public h2 span{
     color: #92FD5F;
     
 }
+.ellipse{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 13%;
+    bottom: 2;
+    margin: auto;
+    background: rgba(146, 253, 95, 0.60) ;
+    border-radius: 540px;
+    filter: blur(10px);
+    width: 472px;
+    height: 540px;
+}
 #about-main-public #frases{
+    position: relative;
     gap: 38.67px;
     justify-content: center;
 }
+#about-main-public h3{
+    font-weight: 700;
+}
 div.verde{
-    padding: 10px;
-    width: 184.44px;
-    height: 220px;
+    padding: 14px;
+    width: 202px;
+    height: 202px;
     border-radius: 20px;
     box-shadow: 0 0 0 5px rgba(146, 253, 95, 1);
     background: rgba(255, 255, 255, 0.50);
@@ -88,20 +110,18 @@ div.verde.solucao{
     box-shadow: 0 0 0 5px rgba(146, 253, 95, 0.5);
     background: rgba(255, 255, 255, 0.25);
 }
-
+div.esforço{
+    box-shadow: 0 0 0 5px rgba(20, 102, 207, 1);
+}
 div.azul{
-    padding: 10px;
-    width: 184.44px;
-    height: 220px;
+    padding: 14px;
+    width: 202px;
+    height: 202px;
     border-radius: 20px;
     border: 5px solid #1466CF;
     background: rgba(255, 255, 255, 0.50);
 }
-#about-main-public h2{
-    margin-top: 60px;
-    margin-bottom: 83px;
-    font-size: 2.5rem;
-}
+
 #about-main-public p{
     font-size: 0.8rem;
 }
@@ -170,8 +190,29 @@ div.azul{
         padding-left: 8px;
     }
 }
-@media (min-width: 650px){
-    
+@media (min-width: 685px){
+    #home{
+        border-bottom: 1px solid black;
+    }
+    .ellipse{
+        display: none;
+    }
+    div.azul,
+    div.verde{
+        width: 184.44px;
+        height: 220px;
+    }
+    div.verde.esforço{
+        box-shadow: 0 0 0 5px rgba(146, 253, 95, 0.5);
+    }
+    #about-main-public h2 {
+        color: #1122BB;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        font-weight: 700;
+        margin-top: 60px;
+        margin-bottom: 83px;
+        font-size: 2.5rem;
+    }
 }
 @media (max-width: 768px){
     container-navbar img{
