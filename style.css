@@ -17,6 +17,12 @@ body,html{
 #container-navbar a{
     font-size: 20px;
 }
+.text-blue{
+    color: #1466CF;
+}
+.navbar-toggler{
+    border: 1px solid #003391;
+}
 /*Home page*/
 #home{
     border-bottom: 1px solid black;
@@ -111,7 +117,9 @@ div.azul{
     .navbar-collapse {
         align-items: flex-start;
     }
-    
+    .navbar-expand-sm .navbar-toggler {
+        display: block;
+    }
 }
 @media (min-width: 500px){
     .navbar-expand-sm {
@@ -128,6 +136,15 @@ div.azul{
         -ms-flex: 0 0 58.333333%;
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
+    }
+    .navbar-expand-sm .navbar-toggler {
+        display: none;
+    }
+    .navbar-expand-sm .navbar-collapse {
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
     }
 }
 @media (max-width: 650px){
