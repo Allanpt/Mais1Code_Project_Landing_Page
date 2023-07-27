@@ -129,16 +129,35 @@ div.azul{
 /*Section "results"*/
 .col-sm-6.mulher-retangulos-verdes #mulher{
     position: absolute;
+    z-index: 0;
 }
 #results div.coluna-da-esquerda{
     gap: 44px;
 }
 #results div.retangulo-verde{
     position: relative;
-    width: 150px;
-    height: 250px;
+    min-width: 150px;;
+    max-height: 250px;
+    width: 29.126%;
+    height: 42.8%;
+    border-radius: 20px;
     background-color: rgba(146, 253, 95, 1);
 }
+#results div.retangulo-cinza img{
+    max-width: 90.5%;
+}
+#results div.retangulo-cinza{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31%;
+    height: 24.54%;
+    margin: 15px auto;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+}
+
 
 /*Media Queries*/
 
@@ -229,9 +248,6 @@ div.azul{
     }
 }
 @media (max-width: 768px){
-    container-navbar img{
-        
-    }
     #home div.header1,
     #home div.p-img{
         display: flex;
