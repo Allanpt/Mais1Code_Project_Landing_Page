@@ -53,6 +53,7 @@ body,html{
 /*About-main-public*/
 #about-main-public {
     text-align: center;
+    margin-bottom: 150px;
 }
 #about-main-public .col-md-12{
     position: relative;
@@ -124,6 +125,19 @@ div.azul{
 
 #about-main-public p{
     font-size: 0.8rem;
+}
+/*Section "results"*/
+.col-sm-6.mulher-retangulos-verdes #mulher{
+    position: absolute;
+}
+#results div.coluna-da-esquerda{
+    gap: 44px;
+}
+#results div.retangulo-verde{
+    position: relative;
+    width: 150px;
+    height: 250px;
+    background-color: rgba(146, 253, 95, 1);
 }
 
 /*Media Queries*/
