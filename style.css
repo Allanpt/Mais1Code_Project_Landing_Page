@@ -95,7 +95,7 @@ body,html{
     font-weight: 700;
 }
 div.verde{
-    padding: 14px;
+    padding: 11px;
     width: 202px;
     height: 202px;
     border-radius: 20px;
@@ -115,7 +115,7 @@ div.esforço{
     box-shadow: 0 0 0 5px rgba(20, 102, 207, 1);
 }
 div.azul{
-    padding: 14px;
+    padding: 6px;
     width: 202px;
     height: 202px;
     border-radius: 20px;
@@ -133,14 +133,33 @@ div.azul{
     margin-bottom: 300px;
 
 }
-.col-sm-6.mulher-retangulos-verdes.d-flex{
-    
-   
+#results span {
+    position: absolute;
+    right: 88%;
+    background: rgba(20, 102, 207, 0.60);
+    border-radius: 50%;
+    filter: blur(10px);
+    width: 220px;
+    height: 251px;
+}
+.col-sm-6.frases-resultados {
+    margin-left: 25px;
+    justify-content: center;
+}
+.col-sm-6.frases-resultados h2,
+.col-sm-6.frases-resultados h3,
+.col-sm-6.frases-resultados p{
+    text-align: center;
+}
+.col-sm-6.frases-resultados h2{
+    font-size: 2.19rem;
+    font-weight: 800;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .col-sm-6.mulher-retangulos-verdes #mulher{
     position: absolute;
     z-index: 0;
-    max-width: 95%;
+    max-width: 517px;
 }
 #results div.coluna-da-esquerda{
     padding-top: 39px;
@@ -233,7 +252,7 @@ div.azul{
     .col-sm-6.mulher-retangulos-verdes.d-flex {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
-        max-width: 41.8%;
+        max-width: 515px;
     }
 }
 @media (max-width: 650px){
