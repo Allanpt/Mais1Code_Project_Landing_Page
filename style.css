@@ -133,9 +133,10 @@ div.azul{
     margin-bottom: 300px;
 
 }
+/*Lado esquerdo*/
 #results span {
     position: absolute;
-    right: 88%;
+    right: 90%;
     background: rgba(20, 102, 207, 0.60);
     border-radius: 50%;
     filter: blur(10px);
@@ -146,6 +147,9 @@ div.azul{
     margin-left: 25px;
     justify-content: center;
 }
+.col-sm-6.frases-resultados.d-flex.flex-column{
+    padding-left: 23px;
+}
 .col-sm-6.frases-resultados h2,
 .col-sm-6.frases-resultados h3,
 .col-sm-6.frases-resultados p{
@@ -155,7 +159,40 @@ div.azul{
     font-size: 2.19rem;
     font-weight: 800;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
 }
+.col-sm-6.frases-resultados p{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.col-sm-6.frases-resultados h3{
+    font-size: 30px;
+    font-weight: 800;
+}
+.col-sm-6.frases-resultados div.d-flex{
+    justify-content: center;
+    gap: 36px;
+    margin-top: 10px;
+}
+.col-sm-6.frases-resultados div.block-1{
+    width: 110px;
+}
+.col-sm-6.frases-resultados div.block-2{
+    width: 138px;
+}
+.col-sm-6.frases-resultados div.block-3{
+    width: 152px;
+}
+.col-sm-6.frases-resultados .col-sm-4 p{
+    font-weight: 700;
+}
+.col-sm-6.frases-resultados .d-flex p.disney,
+.col-sm-6.frases-resultados .d-flex p.netflix{
+    font-size: 30px;
+    font-weight: 700;
+}
+/*Lado Direito*/
 .col-sm-6.mulher-retangulos-verdes #mulher{
     position: absolute;
     z-index: 0;
