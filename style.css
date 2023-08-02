@@ -78,7 +78,6 @@ body,html{
     right: 0;
     left: 0;
     top: 13%;
-    bottom: 2;
     margin: auto;
     background: rgba(146, 253, 95, 0.60) ;
     border-radius: 540px;
@@ -131,17 +130,18 @@ div.azul{
     margin-left: 67px;
     margin-right: 99px;
     margin-bottom: 300px;
-
+    position: relative;
 }
 /*Lado esquerdo*/
 #results span {
     position: absolute;
-    right: 90%;
+    left: -102px;
+    top: -43px;
     background: rgba(20, 102, 207, 0.60);
     border-radius: 50%;
     filter: blur(10px);
-    width: 220px;
-    height: 251px;
+    width: calc(220px * 1.1);
+    height: calc(251px * 1.1);
 }
 .col-sm-6.frases-resultados {
     margin-left: 25px;
@@ -159,12 +159,12 @@ div.azul{
     font-size: 2.19rem;
     font-weight: 800;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .col-sm-6.frases-resultados p{
     font-size: 25px;
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 .col-sm-6.frases-resultados h3{
     font-size: 30px;
@@ -193,9 +193,16 @@ div.azul{
     font-weight: 700;
 }
 /*Lado Direito*/
+.col-sm-6.mulher-retangulos-verdes.d-flex{
+    position: relative;
+}
 .col-sm-6.mulher-retangulos-verdes #mulher{
     position: absolute;
     z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     max-width: 517px;
 }
 #results div.coluna-da-esquerda{
@@ -286,12 +293,16 @@ div.azul{
         -ms-flex-preferred-size: auto;
         flex-basis: auto;
     }
-    .col-sm-6.mulher-retangulos-verdes.d-flex {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 515px;
+    
+}
+@media (min-width: 576px){
+    .col-sm-6 {
+        -ms-flex: auto;
+        flex: auto;
+        max-width: none;
     }
 }
+
 @media (max-width: 650px){
     #container-navbar {
         margin: 13px 0px 0px;
@@ -338,6 +349,7 @@ div.azul{
         margin-bottom: 83px;
         font-size: 2.5rem;
     }
+    
 }
 @media (max-width: 768px){
     #home div.header1,
@@ -425,7 +437,39 @@ div.azul{
         padding-right: 220px;
         padding-left: 220px;
     }
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-sm-6.mulher-retangulos-verdes.d-flex {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 45%;
+    }
 }
+@media (min-width: 1200px){
+    .col-sm-6.mulher-retangulos-verdes.d-flex {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 47%;
+    }
+}
+@media (min-width: 1223px){
+    .col-sm-6.mulher-retangulos-verdes.d-flex {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 47.7%;
+    }
+}
+@media (min-width: 1266px){
+    .col-sm-6.mulher-retangulos-verdes.d-flex {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 540px;
+    }
+}
+
 @media (min-width: 1313px){
     #about-main-public .col-md-12{
         position: relative;
