@@ -39,7 +39,7 @@ body,html{
     width: 220px;
     height: 251px;
 }
-#home.dp-flex {
+.dp-flex {
     display: -ms-flexbox;
     display: flex;
 }
@@ -126,13 +126,11 @@ div.azul{
     font-size: 0.8rem;
 }
 /*Section "results"*/
-#results{
-    margin-left: 67px;
-    margin-right: 99px;
-    margin-bottom: 300px;
-    position: relative;
-}
+
 /*Lado esquerdo*/
+.results1{
+    display: none;
+}
 #results span {
     position: absolute;
     left: -102px;
@@ -142,13 +140,6 @@ div.azul{
     filter: blur(10px);
     width: calc(220px * 1.1);
     height: calc(251px * 1.1);
-}
-.col-sm-6.frases-resultados {
-    margin-left: 25px;
-    justify-content: center;
-}
-.col-sm-6.frases-resultados.d-flex.flex-column{
-    padding-left: 23px;
 }
 .col-sm-6.frases-resultados h2,
 .col-sm-6.frases-resultados h3,
@@ -175,13 +166,13 @@ div.azul{
     gap: 36px;
     margin-top: 10px;
 }
-.col-sm-6.frases-resultados div.block-1{
+.frases-resultados div.block-1{
     width: 110px;
 }
-.col-sm-6.frases-resultados div.block-2{
+.frases-resultados div.block-2{
     width: 138px;
 }
-.col-sm-6.frases-resultados div.block-3{
+.frases-resultados div.block-3{
     width: 152px;
 }
 .col-sm-6.frases-resultados .col-sm-4 p{
@@ -301,6 +292,7 @@ div.azul{
         flex: auto;
         max-width: none;
     }
+    
 }
 
 @media (max-width: 650px){
@@ -324,6 +316,59 @@ div.azul{
         min-height: 1px;
         padding-right: 0px;
         padding-left: 8px;
+    }
+    #about-main-public {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    #results {
+        margin: auto 15px;
+        position: relative;
+    }
+    #results span {
+        display: none;
+    }
+    .results1{
+        display: block;
+    }
+    .hidden{
+        display: none;
+    }
+    .col-sm-6.frases-resultados h2 {
+        font-size: 0.95rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .col-sm-6.frases-resultados p {
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .col-sm-6.frases-resultados h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .frases-resultados div.block-1,
+    .frases-resultados div.block-2,
+    .frases-resultados div.block-3{
+        width: 100%;
+        display: flex;
+    }
+    .frases-resultados div.block-1 h3,
+    .frases-resultados div.block-2 h3,
+    .frases-resultados div.block-3 h3{
+        font-size: 15px;
+        font-weight: 800; 
+    }
+    #mulher{
+        display: none;
+    }
+    
+}
+@media (min-width: 650px){
+    #results{
+        margin: auto 100px;
+        position: relative;
     }
 }
 @media (min-width: 685px){
@@ -447,8 +492,22 @@ div.azul{
         flex: 0 0 50%;
         max-width: 45%;
     }
+    .col-sm-6.frases-resultados.d-flex.flex-column {
+        padding-left: 23px;
+    }
+    .col-sm-6.frases-resultados {
+        margin-left: 25px;
+        justify-content: center;
+    }
+    #results{
+        margin-left: 67px;
+        margin-right: 99px;
+        margin-bottom: 300px;
+        position: relative;
+    }
 }
 @media (min-width: 1200px){
+    
     .col-sm-6.mulher-retangulos-verdes.d-flex {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
