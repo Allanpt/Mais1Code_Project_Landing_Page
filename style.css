@@ -252,7 +252,7 @@ div.azul{
     border-top: 1px solid #2C2C2C;
     margin-bottom: 300px;
 }
-#meet-staff span {
+#meet-staff span#azul {
     position: absolute;
     left: 368px;
     top: 83px;
@@ -266,6 +266,26 @@ div.azul{
     margin-top: 182px;
     margin-left: 15px;
     margin-right: 15px;
+}
+#meet-staff span#verde{
+    position: absolute;
+    width: 461.912px;
+    height: 421px;
+    border-radius: 20px;
+    background: #92FD5F;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.50);
+}
+#meet-staff div#photo-of-them{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-left: 40px;
+}
+#meet-staff div#photo-of-them img{
+    position: relative;
+    min-width: 461.912px;
+    height: 357.297px;
+    margin-top: 64px;
 }
 #meet-staff #meet-them {
     padding-right: 100px;
@@ -337,6 +357,9 @@ div.azul{
         -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
+    }
+    #meet-staff div#photo-of-them {
+        justify-content: center;
     }
 }
 @media (max-width: 499px){
@@ -644,6 +667,12 @@ div.azul{
         margin-right: 99px;
         margin-bottom: 90px;
         position: relative;
+    }
+    #meet-staff div#photo-of-them {
+        display: flex; 
+        justify-content: flex-start;
+        position: relative;
+        padding-left: 40px;
     }
 }
 @media (min-width: 1200px){
