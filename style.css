@@ -246,6 +246,65 @@ div.azul{
     justify-content: center;
     align-items: end;
 }
+/*Section 'meet-staff'*/
+#meet-staff{
+    position: relative;
+    border-top: 1px solid #2C2C2C;
+    margin-bottom: 300px;
+}
+#meet-staff span {
+    position: absolute;
+    left: 368px;
+    top: 83px;
+    background: rgba(20, 102, 207, 0.60);
+    border-radius: 50%;
+    filter: blur(10px);
+    width: calc(220px * 1);
+    height: calc(251px * 1);
+}
+#meet-staff div.row {
+    margin-top: 182px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#meet-staff #meet-them {
+    padding-right: 100px;
+}
+#meet-staff h2{
+    color: #2C2C2C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 35px;
+    font-weight: 800;
+}
+#meet-staff p{
+    color: #2C2C2C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0.375px;
+    margin-bottom: 0;
+}
+#meet-staff #logos{
+    gap: 14px;
+    padding-right: 65px;
+}
+#meet-staff #mais1code-simble{
+    width: 323px;
+    height: 84px;
+}
+#meet-staff #als-simble{
+    width: 56px;
+    height: 55px;
+}
+#meet-staff #als-text{
+    color: #2C2C2C;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 100;
+    text-shadow: none;
+    letter-spacing: normal;
+}
 
 /*Media Queries*/
 @media (min-width: 350px){
@@ -583,7 +642,7 @@ div.azul{
     #results{
         margin-left: 67px;
         margin-right: 99px;
-        margin-bottom: 300px;
+        margin-bottom: 90px;
         position: relative;
     }
 }
