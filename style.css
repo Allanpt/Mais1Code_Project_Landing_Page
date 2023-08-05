@@ -133,7 +133,7 @@ div.azul{
 }
 #results span {
     position: absolute;
-    left: -102px;
+    left: -155px;
     top: -43px;
     background: rgba(20, 102, 207, 0.60);
     border-radius: 50%;
@@ -178,13 +178,16 @@ div.azul{
 .col-sm-6.frases-resultados .col-sm-4 p{
     font-weight: 700;
 }
-.col-sm-6.frases-resultados .d-flex p.disney,
-.col-sm-6.frases-resultados .d-flex p.netflix{
+.frases-resultados p.disney,
+.frases-resultados p.netflix{
     font-size: 30px;
     font-weight: 700;
 }
 /*Lado Direito*/
-.col-sm-6.mulher-retangulos-verdes.d-flex{
+.retangulos-verdes{
+    display: none;
+}
+.col-sm-6.mulher-retangulos-verdes{
     position: relative;
 }
 .col-sm-6.mulher-retangulos-verdes #mulher{
@@ -245,7 +248,38 @@ div.azul{
 }
 
 /*Media Queries*/
+@media (min-width: 350px){
 
+    div.results1{
+        padding-left: 11px;
+        padding-right: 5px;
+    }
+    h3#novos-usuarios{
+        padding-left: 50px;
+        line-height: 27px;
+    }
+    div#amaz-net-dis{
+        margin-top: 15px;
+        gap: 6px;
+    }
+    .col-xsm-5,.col-xsm-7{
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .col-xsm-7{
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .col-xsm-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+}
 @media (max-width: 499px){
     #navbar-links {
        flex-direction: column;
@@ -351,8 +385,15 @@ div.azul{
     .frases-resultados div.block-1,
     .frases-resultados div.block-2,
     .frases-resultados div.block-3{
+        gap: 30px;
         width: 100%;
         display: flex;
+    }
+    .frases-resultados div.block-2{
+        margin-left: -5px;
+    }
+    .frases-resultados div.block-3{
+        margin-left: -15px;
     }
     .frases-resultados div.block-1 h3,
     .frases-resultados div.block-2 h3,
@@ -360,10 +401,49 @@ div.azul{
         font-size: 15px;
         font-weight: 800; 
     }
+    .frases-resultados div.block-1 p,
+    .frases-resultados div.block-2 p,
+    .frases-resultados div.block-3 p{
+        font-size: 15px;
+        font-weight: 700; 
+    }
     #mulher{
         display: none;
     }
-    
+    #pequenos-retangulos{
+        gap: 18px;
+        margin-bottom: 200px;
+    }
+    .col-sm-6.mulher-retangulos-verdes {
+        padding: 0 10px;
+    }
+    .retangulos-verdes{
+        display: block;
+    }
+    #results div.retangulo-cinza {
+        width: 31%;
+        height: 24.54%;
+        min-width: 49.6px;
+        min-height: 46.4px;
+        margin: 15px auto 7px auto;
+    }
+    #results div.retangulo-cinza img {
+        max-width: 85.5%;
+    }
+    #results div.retangulo-verde {
+        min-width: 160px;
+        min-height: 189px;
+        width: 30.5%;
+        height: 42.8%;
+        padding: 0 5px;
+    }
+    #results div.retangulo-verde p {
+        font-size: 0.65rem;
+        
+    }
+    #results div.retangulo-verde h4 {
+        font-size: 0.75rem;
+    }
 }
 @media (min-width: 650px){
     #results{
@@ -487,7 +567,7 @@ div.azul{
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .col-sm-6.mulher-retangulos-verdes.d-flex {
+    .col-sm-6.mulher-retangulos-verdes {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 45%;
@@ -496,8 +576,9 @@ div.azul{
         padding-left: 23px;
     }
     .col-sm-6.frases-resultados {
-        margin-left: 25px;
         justify-content: center;
+        padding-left: 22px;
+
     }
     #results{
         margin-left: 67px;
@@ -508,21 +589,21 @@ div.azul{
 }
 @media (min-width: 1200px){
     
-    .col-sm-6.mulher-retangulos-verdes.d-flex {
+    .col-sm-6.mulher-retangulos-verdes {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 47%;
     }
 }
 @media (min-width: 1223px){
-    .col-sm-6.mulher-retangulos-verdes.d-flex {
+    .col-sm-6.mulher-retangulos-verdes {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 47.7%;
     }
 }
 @media (min-width: 1266px){
-    .col-sm-6.mulher-retangulos-verdes.d-flex {
+    .col-sm-6.mulher-retangulos-verdes {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 540px;
