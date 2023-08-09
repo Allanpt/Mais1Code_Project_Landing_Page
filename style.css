@@ -249,7 +249,7 @@ div.azul{
 /*Section 'meet-staff'*/
 #meet-staff{
     position: relative;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
 }
 #meet-staff span#azul {
     position: absolute;
@@ -341,7 +341,9 @@ div.azul{
     text-shadow: none;
     letter-spacing: normal;
 }
+/*Section 'questions'*/
 #questions{
+    
     margin-bottom: 150px;
 }
 #questions #container-questions{
@@ -363,14 +365,15 @@ div.azul{
     gap: 23px;
 }
 #questions .white-questions{
-    width: 65%;
+    width: 64.6%;
     border-radius: 5px;
     border: 3px solid #146;
     background: #FFF;
     box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.50);
     padding-left: 39px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-right: 39px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 #questions .white-questions p{
     color: #2C2C2C;
@@ -378,6 +381,69 @@ div.azul{
     font-weight: 600;
     margin-bottom: 0;
 }
+/*Section 'contact'*/
+#contact{
+    margin-bottom: 100px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact h2{
+    color: #2C2C2C;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    font-weight: 800;
+    width: 534px;
+    margin: 0 auto;
+}
+#contact .row{
+    margin-top: 60px;
+}
+#contact img{
+    padding-top: 23px;
+    max-width: 98%;
+}
+#contact span{
+    position: absolute;
+    width: 237.921px;
+    height: 419.182px;
+    background: #92FD5F;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.50));
+    border-radius: 20px;
+}
+
+#contact form{
+    margin: 30px 15px;
+}
+#contact form h3{
+    text-align: center;
+    color: #2C2C2C;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+#contact form input,
+#contact form textarea{
+    border: white;
+    padding: 5px;
+    font-size: 12px;
+}
+#contact form #inputs{
+    gap: 15px;
+}
+#contact form textarea{
+    
+}
+#contact form .btn-outline-primary{
+    color: #FFF;
+    font-weight: 700;
+    background-color: #1466CF;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
 
 
 /*Media Queries*/
@@ -419,6 +485,11 @@ div.azul{
         width: 100%;
         height: 104%;
         min-height: 100%;
+    }
+    #contact .col-sm-6{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 }
 @media (max-width: 499px){
@@ -470,6 +541,23 @@ div.azul{
         -ms-flex: auto;
         flex: auto;
         max-width: none;
+    }
+    #contact {
+        width: 533px;
+    }
+    #contact img{
+        padding-top: 0px;
+        max-width: 130%;
+    }
+    #contact span{
+        height: 322.99px;
+        width: 204px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #contact textarea{
+        line-height: 6px;
     }
     
 }
@@ -608,19 +696,36 @@ div.azul{
     .hidden-less-650w{
         display: none;
     }
+    #meet-staff{
+        margin-bottom: 45px;
+    }
     #meet-staff div.row{
         margin-top: 0;
         margin-right: 0;
-        
     }
-    
     #meet-staff div#photo-of-them img {
         max-width: 104%;
         min-width: auto;
         height: 88%;
         margin-top: 75px;
     }
-
+    #questions #white-blocks{
+        gap: 10px;
+    }
+    #questions h2{
+        font-size: 20px;
+    }
+    #questions .white-questions p{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    #questions .white-questions{
+        width: 68%;
+        border: 2px solid #12B;
+        background: #FFFEFE;
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.50);
+        padding: 7px 8px;
+    }
 }
 @media (min-width: 650px){
     #results{
@@ -720,6 +825,21 @@ div.azul{
         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
         margin-top: 65px;
     }
+    #contact {
+        width: 669px;
+    }
+    #contact img{
+        padding-top: 23px;
+        max-width: 98%;
+    }
+    #contact span{
+        height: 419.182px;
+        width: 237.921px;
+        right: auto;
+    }
+    #contact textarea{
+        line-height: inherit;
+    }
 }
 @media (min-width: 900px){
     #navbar-links {
@@ -805,6 +925,10 @@ div.azul{
     }
     .wake-up-less-1095w{
         display: none;
+    }
+    #questions {
+        border-top: 1px solid #2C2C2C;
+        padding-top: 100px;
     }
 }
 @media (min-width: 1200px){
