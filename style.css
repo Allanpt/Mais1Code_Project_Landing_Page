@@ -249,7 +249,6 @@ div.azul{
 /*Section 'meet-staff'*/
 #meet-staff{
     position: relative;
-    border-top: 1px solid #2C2C2C;
     margin-bottom: 300px;
 }
 #meet-staff span#azul {
@@ -342,6 +341,44 @@ div.azul{
     text-shadow: none;
     letter-spacing: normal;
 }
+#questions{
+    margin-bottom: 150px;
+}
+#questions #container-questions{
+    justify-content: center;
+    align-items: center;
+}
+#questions h2{
+    color: #2C2C2C;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+#container-questions div{
+    align-items: center;
+    width: 100%;
+}
+#questions #white-blocks{
+    gap: 23px;
+}
+#questions .white-questions{
+    width: 65%;
+    border-radius: 5px;
+    border: 3px solid #146;
+    background: #FFF;
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.50);
+    padding-left: 39px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#questions .white-questions p{
+    color: #2C2C2C;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
 
 /*Media Queries*/
 @media (min-width: 350px){
@@ -447,7 +484,12 @@ div.azul{
     #container-navbar {
         margin: 13px 0px 0px;
     }
-    .home, .about-main-public {
+    .home{
+        margin-left: 15px;
+        margin-right: 0;
+        height: 100%;
+    }
+    .about-main-public {
         margin: 0 15px;
         height: 100%;
     }
@@ -530,6 +572,7 @@ div.azul{
     }
     .col-sm-6.mulher-retangulos-verdes {
         padding: 0 10px;
+        margin-top: 30px;
     }
     .retangulos-verdes{
         display: block;
@@ -597,6 +640,7 @@ div.azul{
         position: absolute;
         width: 461.912px;
         height: 421px;
+        min-height: auto;
         border-radius: 20px;
         background: #92FD5F;
         box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.50);
@@ -743,6 +787,9 @@ div.azul{
         margin-bottom: 90px;
         position: relative;
     }
+    #meet-staff{
+        border-top: 1px solid #2C2C2C;
+    }
     #meet-staff div.row{
         margin-top: 182px;
     }
@@ -754,6 +801,7 @@ div.azul{
     }
     #meet-staff #meet-them{
         padding-right: 100px;
+        margin-top: 0;
     }
     .wake-up-less-1095w{
         display: none;
