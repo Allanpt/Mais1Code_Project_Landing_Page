@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+}
+#home div.p-img{
+    overflow-x: hidden;
 }
 body,html{
     background-color: #E5E5E5;
@@ -451,7 +455,7 @@ div.azul{
 
     div.results1{
         padding-left: 11px;
-        padding-right: 5px;
+        padding-right: 14px;
     }
     h3#novos-usuarios{
         padding-left: 50px;
@@ -504,6 +508,40 @@ div.azul{
     .navbar-expand-sm .navbar-toggler {
         display: block;
     }
+    div.azul {
+        padding: 6px;
+        width: 40%;
+        height: auto;
+        border-radius: 20px;
+        border: 5px solid #1466CF;
+        background: rgba(255, 255, 255, 0.50);
+    }
+    div.verde {
+        padding: 11px;
+        width: 40%;
+        height: auto;
+    }
+    div.verde.solucao{
+        padding: 20px;
+    }
+    .ellipse {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 13%;
+        margin: auto;
+        background: rgba(146, 253, 95, 0.60);
+        border-radius: 540px;
+        filter: blur(10px);
+        width: 100%;
+        height: 600px;
+    }
+    #about-main-public h3{
+        font-size: 1rem;
+    }
+    #about-main-public p {
+        font-size: 0.7rem;
+    }
 }
 @media (min-width: 500px){
     .navbar-expand-sm {
@@ -530,10 +568,32 @@ div.azul{
         -ms-flex-preferred-size: auto;
         flex-basis: auto;
     }
+    #results div.retangulo-verde {
+        min-width: auto;
+        min-height: 189px;
+        width: 30.5%;
+        height: 42.8%;
+        padding: 0 5px;
+    }
     #meet-staff span#verde {
         width: 100%;
         height: 102%;
         min-height: 100%;
+    }
+    
+    #contact img{
+        padding-top: 0px;
+        max-width: 110%;
+    }
+    #contact span{
+        height: calc(322.99px * 1);
+        width: calc(204px * 1);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #contact textarea{
+        line-height: 4px;
     }
 }
 @media (min-width: 576px){
@@ -543,18 +603,18 @@ div.azul{
         max-width: none;
     }
     #contact {
-        width: 533px;
+        
     }
     #contact img{
         padding-top: 0px;
-        max-width: 130%;
+        max-width: 120%;
     }
     #contact span{
         height: 322.99px;
         width: 204px;
-        right: 0;
+        left: 50%;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translate(-50%, -50%);
     }
     #contact textarea{
         line-height: 6px;
@@ -594,6 +654,10 @@ div.azul{
         min-height: 1px;
         padding-right: 0px;
         padding-left: 8px;
+    }
+    #home div.col-md-6 .img-fluid{
+        max-width: 108%;
+        
     }
     #about-main-public {
         text-align: center;
@@ -675,13 +739,7 @@ div.azul{
     #results div.retangulo-cinza img {
         max-width: 85.5%;
     }
-    #results div.retangulo-verde {
-        min-width: 160px;
-        min-height: 189px;
-        width: 30.5%;
-        height: 42.8%;
-        padding: 0 5px;
-    }
+    
     #results div.retangulo-verde p {
         font-size: 0.65rem;
         
@@ -731,6 +789,13 @@ div.azul{
     #results{
         margin: auto 100px;
         position: relative;
+    }
+    #results div.retangulo-verde {
+        min-width: 150px;;
+        min-height: 252px;
+        width: 26.6%;
+        height: 42.8%;
+        padding: 1px;
     }
     #meet-staff #meet-them{
         margin-top: 80px;
