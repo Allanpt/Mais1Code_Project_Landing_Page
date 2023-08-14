@@ -4,7 +4,8 @@
     box-sizing: border-box;
     
 }
-#home div.p-img{
+#home div.p-img,
+#contact{
     overflow-x: hidden;
 }
 body,html{
@@ -403,10 +404,16 @@ div.azul{
 #contact .row{
     margin-top: 60px;
 }
+
+#contact #mulher-contact{
+    justify-content: end;
+    padding-right: 0;
+}
 #contact img{
     padding-top: 23px;
-    max-width: 120%;
+    max-width: 100%;
 }
+
 #contact span{
     position: absolute;
     width: 237.921px;
@@ -494,6 +501,7 @@ div.azul{
     }
     
     #contact .col-sm-6{
+        display: flex;
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
@@ -669,14 +677,14 @@ div.azul{
     
     #contact img{
         padding-top: 0px;
-        max-width: 120%;
+        max-width: 300px;
     }
     #contact span{
         height: calc(322.99px * 1);
         width: calc(204px * 1);
-        left: 50%;
+        left: 0;
         top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateY(-50%);
     }
     #contact textarea{
         line-height: 4px;
@@ -870,6 +878,18 @@ div.azul{
         box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.50);
         padding: 7px 8px;
     }
+    #contact #mulher-contact {
+        justify-content: end;
+        padding-right: 0;
+        flex: 0 0 55%;
+        max-width: 55%;
+        padding-right: 0;
+    }
+    #contact #form {
+        flex: 0 0 45%;
+        max-width: 45%;
+        padding-left: 0;
+    }
 }
 @media (min-width: 650px){
     #results{
@@ -992,12 +1012,15 @@ div.azul{
     
     #contact img{
         padding-top: 23px;
-        max-width: 98%;
+        max-width: 314px;
     }
     #contact span{
         height: 419.182px;
         width: 237.921px;
         right: auto;
+        left: auto;
+        top: auto;
+        transform: inherit;
     }
     #contact textarea{
         line-height: inherit;
