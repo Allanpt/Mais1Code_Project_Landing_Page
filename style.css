@@ -398,7 +398,6 @@ div.azul{
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 25px;
     font-weight: 800;
-    width: 534px;
     margin: 0 auto;
 }
 #contact .row{
@@ -406,7 +405,7 @@ div.azul{
 }
 #contact img{
     padding-top: 23px;
-    max-width: 98%;
+    max-width: 120%;
 }
 #contact span{
     position: absolute;
@@ -508,6 +507,22 @@ div.azul{
         height: 88%;
         margin-top: 75px;
     }
+    #contact span {
+        height: calc(322.99px * 0.8);
+        width: calc(204px * 0.8);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #contact form h3{
+        font-size: 14px;
+    }
+    #contact form {
+        margin: 12px 15px;
+    }
+    #contact form input, #contact form textarea{
+        font-size: 8px;
+    }
 }
 @media (min-width: 400px){
     #meet-staff div#photo-of-them div#apareça p{
@@ -521,6 +536,22 @@ div.azul{
     }
     .frases-resultados div.block-3 {
         margin-left: -13px;
+    }
+    #contact span {
+        height: calc(322.99px * 0.9);
+        width: calc(204px * 0.9);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #contact form h3{
+        font-size: 25px;
+    }
+    #contact form {
+        margin: 30px 15px;
+    }
+    #contact form input, #contact form textarea{
+        font-size: 10px;
     }
 }
 @media (max-width: 499px){
@@ -582,6 +613,10 @@ div.azul{
         font-weight: 100;
     }
     
+    #contact textarea{
+        line-height: 4px;
+    }
+    
 }
 @media (min-width: 500px){
     .navbar-expand-sm {
@@ -634,7 +669,7 @@ div.azul{
     
     #contact img{
         padding-top: 0px;
-        max-width: 100%;
+        max-width: 120%;
     }
     #contact span{
         height: calc(322.99px * 1);
@@ -646,6 +681,11 @@ div.azul{
     #contact textarea{
         line-height: 4px;
     }
+    #contact form input, #contact form textarea {
+        border: white;
+        padding: 5px;
+        font-size: 12px;
+    }
 }
 @media (min-width: 576px){
     .col-sm-6 {
@@ -654,12 +694,9 @@ div.azul{
         max-width: none;
     }
     #contact {
-        width: 533px;
     }
-    
-    #contact img{
-        padding-top: 0px;
-        max-width: 120%;
+    #contact h2 {
+        width: 534px;
     }
     #contact span{
         height: 322.99px;
@@ -950,8 +987,9 @@ div.azul{
         margin-top: 65px;
     }
     #contact {
-        width: 669px;
+        
     }
+    
     #contact img{
         padding-top: 23px;
         max-width: 98%;
@@ -964,6 +1002,7 @@ div.azul{
     #contact textarea{
         line-height: inherit;
     }
+    
 }
 @media (min-width: 900px){
     #navbar-links {
