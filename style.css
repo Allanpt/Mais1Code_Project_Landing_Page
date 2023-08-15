@@ -4,12 +4,13 @@
     box-sizing: border-box;
     
 }
-body,
+
 #home div.p-img,
 #contact{
     overflow-x: hidden;
 }
 body,html{
+    overflow-x: hidden;
     background-color: #E5E5E5;
     box-sizing: border-box;
     padding: 0;
