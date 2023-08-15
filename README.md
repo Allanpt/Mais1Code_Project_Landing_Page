@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Bootstrap
 - Figma
 
-## :computer: Projeto - [Acesse aqui](https://allanpt.github.io/Spotify)
+## :computer: Projeto - [Acesse aqui](https://allanpt.github.io/Mais1Code_Project_Landing_Page/)
 
 Esse projeto tem por conceito implementar uma nova ferramenta dentro das plataformas de streaming. Com ela, a absorção dos conteúdos dentro da plataforma será mais eficiente pela comunidade surda.
 
