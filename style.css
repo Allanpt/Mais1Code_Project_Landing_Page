@@ -4,6 +4,7 @@
     box-sizing: border-box;
     
 }
+body,
 #home div.p-img,
 #contact{
     overflow-x: hidden;
