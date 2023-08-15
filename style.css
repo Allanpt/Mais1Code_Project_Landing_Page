@@ -348,8 +348,7 @@ div.azul{
 }
 /*Section 'questions'*/
 #questions{
-    
-    margin-bottom: 150px;
+    margin-bottom: 30px;
 }
 #questions #container-questions{
     justify-content: center;
@@ -396,13 +395,12 @@ div.azul{
 #contact h2{
     color: #2C2C2C;
     text-align: center;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 800;
     margin: 0 auto;
 }
 #contact .row{
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 #contact #mulher-contact{
@@ -453,7 +451,34 @@ div.azul{
     border-radius: 10px;
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
 }
-
+/*Footer*/
+footer{
+    color: #FFF;
+    background-color: #2C2C2C;
+}
+#footer{
+    margin: 8px 100px;
+}
+#footer h3{
+    font-size: 1.57rem;
+}
+#footer .retangulo-cinza{
+    width: 180px;
+    height: 54px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: #3C3A3A;
+    padding: 5px 25px 5px 8px;
+}
+#footer .retangulo-cinza p{
+    color: #FFF;
+    margin-bottom: 0;
+    margin-left: 8px;
+    font-size: 25px;
+}
+#footer .retangulo-cinza iconify-icon{
+    font-size: 37px;
+}
 
 
 /*Media Queries*/
@@ -674,7 +699,9 @@ div.azul{
         font-size: 13px;
         font-weight: 400;
     }
-    
+    #contact h2 {
+        width: 500px;
+    }
     #contact img{
         padding-top: 0px;
         max-width: 300px;
@@ -705,6 +732,8 @@ div.azul{
     }
     #contact h2 {
         width: 534px;
+        font-size: 25px;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     }
     #contact span{
         height: 322.99px;
